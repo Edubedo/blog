@@ -1,7 +1,70 @@
-export default function Home() {
+import Image from "next/image";
+import { socialLinks } from "./config";
+
+export default function Page() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1 className="font-bold text-3xl">Chinguen a su madre</h1>
-    </div>
+    <section>
+      <a href={socialLinks.twitter} target="_blank">
+        <Image
+          src="/PROFILE.jfif"
+          alt="Profile photo"
+          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5  hover:grayscale"
+          unoptimized
+          width={160}
+          height={160}
+          priority
+        />
+      </a>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">
+        Eduardo Yair Hernández Escobedo
+      </h1>
+      <div className="prose prose-neutral dark:prose-invert">
+        <p>
+          Manzanillo, México · +52 3141097049 · ezescobedo27@gmail.com
+        </p>
+        <p>
+          Software Developer passionate about crafting impactful solutions. Currently pursuing a bachelor’s degree in software engineering at the University of Colima, with a strong focus on continuous learning and professional growth.
+        </p>
+        <h2 className="mt-8 text-xl font-medium tracking-tight">Professional Experience</h2>
+        <p>
+          <strong>IT Arkon</strong><br />
+          Web developer<br />
+          Manzanillo, México<br />
+          July 2023 – Present
+        </p>
+        <ul>
+          <li>Designed and developed new framework modules, contributing to the system’s scalability and performance.</li>
+          <li>Resolved complex bugs and optimized existing features to enhance system stability and efficiency.</li>
+          <li>Implemented best practices with Husky to enforce commit standards and improve branch management.</li>
+          <li>Utilized technologies such as React, Node.js, Tailwind, PostgreSQL, Git, GitHub, and Trello to deliver high-quality solutions.</li>
+          <li>Worked collaboratively in an agile team environment, improving communication and problem-solving skills.</li>
+        </ul>
+        <h2 className="mt-8 text-xl font-medium tracking-tight">Education</h2>
+        <p>
+          <strong>Universidad de Colima</strong><br />
+          Ingeniería de Software<br />
+          Manzanillo, México<br />
+          August 2024 - Present
+        </p>
+        <p>
+          <strong>Universidad de Colima</strong><br />
+          Técnico Analista Programador<br />
+          Manzanillo, México<br />
+          August 2021 - June 2024
+        </p>
+        <h2 className="mt-8 text-xl font-medium tracking-tight">Languages</h2>
+        <p>
+          Spanish: Native<br />
+          English: B1
+        </p>
+        <h2 className="mt-8 text-xl font-medium tracking-tight">Additional Skills</h2>
+        <ul>
+          <li>Project management</li>
+          <li>Team collaboration</li>
+          <li>Adaptability</li>
+          <li>Problem-Solving</li>
+        </ul>
+      </div>
+    </section>
   );
 }
