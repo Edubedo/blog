@@ -1,4 +1,5 @@
 "use client";
+
 import * as React from "react";
 import { useTheme } from "next-themes";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
@@ -44,9 +45,9 @@ export const ThemeSwitch: React.FC = () => {
   };
 
   React.useEffect(() => {
-    setMounted(true);
     const initTheme = getColorPreference();
     reflectPreference(initTheme);
+    setMounted(true);
 
     const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleChange = () => {
@@ -67,12 +68,7 @@ export const ThemeSwitch: React.FC = () => {
   };
 
   if (!mounted) {
-    return (
-      <FaCircleHalfStroke
-        className="h-[14px] w-[14px] text-[#1c1c1c]"
-        aria-hidden="true"
-      />
-    );
+    return null;
   }
 
   return (
