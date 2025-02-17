@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function Projects() {
+  console.log("projects", projects);
   return (
     <section>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
@@ -16,16 +17,21 @@ export default function Projects() {
           <Link
             key={index}
             href={project.url}
-            className="flex flex-col space-y-1 mb-5 transition-opacity duration-200 hover:opacity-80"
+            className="flex flex-col mb-5 space-y-1 transition-opacity duration-200 hover:opacity-80"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2">
+            <div className="flex flex-col items-start justify-between w-full space-y-1 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-2">
               <h2 className="text-black dark:text-white">{project.title}</h2>
-              <p className="text-neutral-600 dark:text-neutral-400 tracking-tight">
+            </div>
+            <p className="tracking-tight text-neutral-600 dark:text-neutral-400">
                 {project.description}
               </p>
-            </div>
+            <img
+              src={project.img}
+              alt={`Image for ${project.title}`}
+              className="object-cover w-full rounded-md h-50"
+            />
           </Link>
         ))}
       </div>

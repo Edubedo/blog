@@ -8,7 +8,7 @@ export default function Page() {
         <Image
           src="/PROFILE.jfif"
           alt="Profile photo"
-          className="rounded-full bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5  hover:grayscale"
+          className="block mx-auto mt-0 mb-10 bg-gray-100 rounded-full lg:mt-5 lg:mb-5 sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
           unoptimized
           width={160}
           height={160}
@@ -20,7 +20,7 @@ export default function Page() {
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Manzanillo, México · +52 3141097049 · ezescobedo27@gmail.com
+          Manzanillo, México · ezescobedo27@gmail.com
         </p>
         <p>
           Software Developer passionate about crafting impactful solutions. Currently pursuing a bachelor’s degree in software engineering at the University of Colima, with a strong focus on continuous learning and professional growth.
