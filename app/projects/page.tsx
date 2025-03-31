@@ -30,7 +30,7 @@ export default function Projects() {
             <img
               src={project.img}
               alt={`Image for ${project.title}`}
-              className="object-cover w-full rounded-md h-50"
+              className="object-fill w-full rounded-md h-[300PX]"
             />
           </Link>
         ))}
