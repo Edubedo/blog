@@ -7,7 +7,7 @@ tags: 'Software'
 
 ## Instalar GIT
 
-You can install git from the [git download website](https://git-scm.com/downloads).
+Puedes instalar git desde aquí [Sitio web git](https://git-scm.com/downloads).
 
 ## Configurar usuario de git
 
@@ -27,4 +27,89 @@ cd nuevo_proyecto
 
 ### Inicializar git
 
+```
+git init
+```
+
+This command initializes a new git repository in your project folder.
+
 ## Clonar proyecto
+
+To clone an existing repository, use:
+
+```
+git clone <url-del-repositorio>
+```
+
+Replace `<url-del-repositorio>` with the URL of the repository you want to clone.
+
+## Guardar cambios
+
+### Ver el estado del repositorio
+
+Para ver los archivos modificados o nuevos en tu proyecto, usa:
+
+```
+git status
+```
+
+### Agregar archivos al área de preparación (staging area)
+
+Para agregar un archivo específico al área de preparación:
+
+```
+git add <nombre-del-archivo>
+```
+
+Para agregar todos los archivos modificados o nuevos:
+
+```
+git add .
+```
+
+### Hacer un commit
+
+Un commit guarda los cambios en el historial del repositorio. Asegúrate de agregar un mensaje descriptivo:
+
+```
+git commit -m "Descripción de los cambios realizados"
+```
+
+### Tipos de commits
+
+1. **Commits iniciales**: Usados al comenzar un proyecto.
+
+   ```
+   git commit -m "Initial commit"
+   ```
+
+2. **Commits de corrección**: Para corregir errores en el código.
+
+   ```
+   git commit -m "Fix: Corrige error en la función de autenticación"
+   ```
+
+3. **Commits de características**: Para agregar nuevas funcionalidades.
+
+   ```
+   git commit -m "Feat: Agrega funcionalidad de búsqueda"
+   ```
+
+4. **Commits de documentación**: Para actualizar o agregar documentación.
+   ```
+   git commit -m "Docs: Actualiza la guía de instalación"
+   ```
+
+### Ver historial de commits
+
+Para ver el historial de commits en tu repositorio:
+
+```
+git log
+```
+
+Puedes usar `git log --oneline` para un resumen más compacto.
+
+## Resumen
+
+Con estos pasos, puedes instalar, configurar y comenzar a trabajar con git, además de guardar y organizar tus cambios de manera eficiente.
