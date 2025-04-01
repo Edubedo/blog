@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 };
 
 export default function Projects() {
-  console.log("projects", projects);
   return (
     <section>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
