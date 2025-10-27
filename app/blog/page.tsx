@@ -9,11 +9,14 @@ export const metadata = {
 export default function BlogPosts() {
   let allBlogs = getBlogPosts();
 
+  // Filter out Valeria's post from the blog listing
+  const visibleBlogs = allBlogs.filter(post => post.slug !== 'valeria');
+
   return (
     <section>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">My blog</h1>
       <div>
-        {allBlogs
+        {visibleBlogs
           .sort((a, b) => {
             if (
               new Date(a.metadata.publishedAt) >

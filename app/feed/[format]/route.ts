@@ -45,7 +45,7 @@ export async function GET(
     },
   });
 
-  const allPosts = await getBlogPosts();
+  const allPosts = await getBlogPosts().filter(post => post.slug !== 'valeria');
 
   allPosts.forEach((post) => {
     const postUrl = `${BaseUrl}blog/${post.slug}`;
