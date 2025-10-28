@@ -6,7 +6,7 @@ export default function Page() {
     <section>
       <a href={socialLinks.github} target="_blank">
         <Image
-          src="/PROFILE.jfif"
+          src="/"
           alt="Profile photo"
           className="block mx-auto mt-0 mb-10 bg-gray-100 rounded-full lg:mt-5 lg:mb-5 sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
           unoptimized
