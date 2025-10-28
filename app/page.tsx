@@ -16,21 +16,22 @@ export default function Page() {
         />
       </a>
       <h1 className="mb-8 text-2xl font-medium tracking-tight">
-        Eduardo Yair Hernández Escobedo
+        Edubedo
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
-        <p>
-          Manzanillo, México · ezescobedo27@gmail.com
-        </p>
         <p>
           Software Developer passionate about crafting impactful solutions. Currently pursuing a bachelor’s degree in software engineering at the University of Colima, with a strong focus on continuous learning and professional growth.
         </p>
         <h2 className="mt-8 text-xl font-medium tracking-tight">Professional Experience</h2>
+         <p>
+          <strong>TLDG INTEGRADORA</strong><br />
+          Logistics and software development.<br />
+          July 2025 – Present
+        </p>
         <p>
           <strong>IT Arkon</strong><br />
           Web developer<br />
-          Manzanillo, México<br />
-          July 2023 – Present
+          July 2023 – July 2025s
         </p>
         <ul>
           <li>Designed and developed new framework modules, contributing to the system’s scalability and performance.</li>
@@ -39,23 +40,10 @@ export default function Page() {
           <li>Utilized technologies such as React, Node.js, Tailwind, PostgreSQL, Git, GitHub, and Trello to deliver high-quality solutions.</li>
           <li>Worked collaboratively in an agile team environment, improving communication and problem-solving skills.</li>
         </ul>
-        <h2 className="mt-8 text-xl font-medium tracking-tight">Education</h2>
-        <p>
-          <strong>Universidad de Colima</strong><br />
-          Ingeniería de Software<br />
-          Manzanillo, México<br />
-          August 2024 - Present
-        </p>
-        <p>
-          <strong>Universidad de Colima</strong><br />
-          Técnico Analista Programador<br />
-          Manzanillo, México<br />
-          August 2021 - June 2024
-        </p>
         <h2 className="mt-8 text-xl font-medium tracking-tight">Languages</h2>
         <p>
           Spanish: Native<br />
-          English: B1
+          English: B2
         </p>
         <h2 className="mt-8 text-xl font-medium tracking-tight">Additional Skills</h2>
         <ul>
