@@ -20,7 +20,7 @@ export default function Page() {
       </h1>
       <div className="prose prose-neutral dark:prose-invert">
         <p>
-          Software Developer passionate about crafting impactful solutions. Currently pursuing a bachelor’s degree in software engineering at the University of Colima, with a strong focus on continuous learning and professional growth.
+          Software Developer passionate about crafting impactful solutions. With a strong focus on continuous learning and professional growth.
         </p>
         <h2 className="mt-8 text-xl font-medium tracking-tight">Professional Experience</h2>
          <p>
@@ -31,7 +31,7 @@ export default function Page() {
         <p>
           <strong>IT Arkon</strong><br />
           Web developer<br />
-          July 2023 – July 2025s
+          July 2023 – July 2025
         </p>
         <ul>
           <li>Designed and developed new framework modules, contributing to the system’s scalability and performance.</li>
