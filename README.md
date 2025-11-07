@@ -1,5 +1,5 @@
-# Edubedo
+# Eduardo Yair Hernández Escobedo
 
 ## Licence
 
-Edubedo is open-source and released under the MIT License.
+Eduardo Yair Hernández Escobedo is open-source and released under the MIT License.

@@ -4,7 +4,7 @@ import { projects } from "./project-data";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Edubedo Projects",
+  description: "Eduardo Yair Hernández Escobedo Projects",
 };
 
 export default function Projects() {
@@ -17,8 +17,8 @@ export default function Projects() {
             key={index}
             href={project.url}
             className="flex flex-col mb-5 space-y-1 transition-opacity duration-200 hover:opacity-80"
-            target="_blank"
-            rel="noopener noreferrer"
+            target={project.url.startsWith("http") ? "_blank" : undefined}
+            rel={project.url.startsWith("http") ? "noopener noreferrer" : undefined}
           >
             <div className="flex flex-col items-start justify-between w-full space-y-1 sm:flex-row sm:items-center sm:space-y-0 sm:space-x-2">
               <h2 className="text-black dark:text-white">{project.title}</h2>
